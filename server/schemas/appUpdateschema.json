@@ -1,0 +1,80 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id",
+        "user_id"
+    ],
+    "properties": {
+                "id": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The id Schema"
+                },
+                "user_id": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The user_id Schema"
+                },
+                "applied_date": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The applied_date Schema",
+                    "format": "date"
+                },
+                "job_title": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The job_title Schema"
+                },
+                "company": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The company Schema"
+                },
+                "application_type": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The application_type Schema"
+                },
+                "phonescreen": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The phonescreen Schema",
+                    "format": "date"
+                },
+                "coding_challenge": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The coding_challenge Schema",
+                    "format": "date"
+                },
+                "interview_1": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The interview_1 Schema",
+                    "format": "date"
+                },
+                "interview_2": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The interview_2 Schema",
+                    "format": "date"
+                },
+                "offer": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The offer Schema",
+                    "format": "date"
+                },
+                "active": {
+                    "type": "boolean",
+                    "default": true,
+                    "title": "The active Schema"
+                }
+            }
+        }
+  

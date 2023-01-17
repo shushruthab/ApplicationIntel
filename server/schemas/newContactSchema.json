@@ -1,0 +1,57 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "user_id",
+        "firstname",
+        "lastname"
+    ],
+    "properties": {
+        "user_id": {
+            "type": "integer",
+            "default": 0,
+            "title": "The user_id Schema"
+        },
+        "firstname": {
+            "type": "string",
+            "default": ""
+        },
+        "lastname": {
+            "type": "string",
+            "default": ""
+        },
+        "position": {
+            "type": "string",
+            "default": "",
+            "title": "The job_title Schema"
+        },
+        "company": {
+            "type": "string",
+            "default": "",
+            "title": "The company Schema"
+        },
+        "email": {
+            "type": "string",
+            "default": "",
+            "minLength": 6,
+            "maxLength": 100,
+            "format": "email"
+        },
+        "phone_number": {
+            "type": "string",
+            "format": "phone",
+            "pattern": "^\\(?[2-9]\\d{2}\\)?[-\\s]?\\d{3}-\\d{4}$",
+            "minLength": 10,
+            "maxLength": 10
+          }
+        ,
+        "notes": {
+            "type": "string",
+            "default": ""
+        }
+    }
+    }
+    
